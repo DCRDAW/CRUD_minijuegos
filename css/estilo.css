@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: green;
+    width: 1200px;
+}
+header{
+    width: 1200px;
+    background-color: aqua;
+    
+}
+/*Estilos generales del nav, declaramos el display flex */
+nav{
+    width: 1200px;
+    display: flex;
+    background-color: aquamarine;
+    padding-top: 0;
+    padding-bottom: 0;
+   
+}
+nav p{
+    width: 350px;
+    margin-right: 5px;
+    text-align: center;
+    font-size:xx-large ;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    border: 1px solid white;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
