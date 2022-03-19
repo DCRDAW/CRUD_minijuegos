@@ -16,10 +16,10 @@ class OperacionesBD{
 
         $this->resultado=$this->mysqli->multi_query($consulta);
     }
-    public function  filasAfectadas(){
+    public function filasAfectadas(){
          return $this->mysqli->affected_rows;
     }
-    public function  numeroFilas($resultado){
+    public function numeroFilas($resultado){
         return $numeroFilas = $resultado->num_rows;
     }
     public function ultimoInsert_id(){

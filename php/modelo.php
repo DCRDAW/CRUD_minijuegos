@@ -68,11 +68,31 @@ class Modelo{
         AND `TABLE_NAME`='reciclaje_items'  
     ";
     $resultado=$this->conexion->consultas($consulta);
-    return $this->conexion->extraerFila($resultado);
+    $titulos=array();
+    while ($fila = $this->conexion->extraerFila($resultado)){
+      array_push($titulos,
+        [
+          "COLUMN_NAME" => $fila["COLUMN_NAME"],
+        ]
+      );
+    }
+    return $titulos;
+  
   }
   function contenido(){
     $consulta="SELECT * FROM reciclaje_items ";
+   
     $resultado=$this->conexion->consultas($consulta);
+    $items=array();
+    while ($fila = $this->conexion->extraerFila($resultado)){
+      array_push($items,
+        [
+          "idItem" => $fila["idItem"],
+          "nombre" =>$fila["nombre"]
+        ]
+      );
+    }
+    return $items;
   }
 }
 

@@ -2,10 +2,17 @@
     require 'php/controlador.php';
     $control=new Controlador();
     $header=$control->titulo();
-    $header=$control->titulo();
+    
+    $result=$control->contenido();
+
+    
+    require('fpdf/fpdf.php');
+    $pdf = new FPDF();
+    $pdf->AddPage();
     //Ponemos el tipo de letra negrita y tamaño 12 en el título y le damos el ancho y la altura de la celda, con borde 1
     $pdf->SetFont('Arial','B',12);		
     foreach($header as $heading) {
+       
         foreach($heading as $column_heading)
             $pdf->Cell(30,12,$column_heading,1);
     }
