@@ -22,9 +22,7 @@
            <p>
                 <a href="pdf.php" >DescargarPDF Listado</a>
             </p>
-            <p>
-                <a href="excell.php" >Alta por excell</a>
-            </p>
+
         </nav>
     
        

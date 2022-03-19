@@ -20,7 +20,7 @@ class OperacionesBD{
          return $this->mysqli->affected_rows;
     }
     public function numeroFilas($resultado){
-        return $numeroFilas = $resultado->num_rows;
+        return $resultado->num_rows;
     }
     public function ultimoInsert_id(){
         return $this->mysqli->insert_id;
