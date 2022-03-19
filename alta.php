@@ -27,7 +27,7 @@
         
             <input type="submit" id="enviar" name="envio">
         </form>
-      
+        <a href="index.php"><button>Volver atras</button></a>
     </body>
 </html>
 

@@ -17,10 +17,10 @@
                 <a href="alta.php" >Alta</a>
            </p>
            <p>
-                <a href="modificacionBorrado.php" >Modificacion/Borrado</a>
+                <a href="listado.php" >Modificacion/Borrado</a>
            </p>
            <p>
-                <a href="Listado" >DescargarPDF Listado</a>
+                <a href="pdf.php" >DescargarPDF Listado</a>
             </p>
         </nav>
     
